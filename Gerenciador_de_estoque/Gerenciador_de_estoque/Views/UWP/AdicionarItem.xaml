@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.UWP.AdicionarItem"
+             NavigationPage.HasBackButton="True"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource PrimariaDark}}">
+    <ContentPage.Content>
+        <Frame CornerRadius="40" 
+            HeightRequest="850" 
+            WidthRequest="450" 
+            HorizontalOptions="Center" 
+            VerticalOptions="CenterAndExpand"
+            BackgroundColor="{AppThemeBinding Light={StaticResource Secundaria}, Dark={StaticResource SecundariaDark}}">
+            <StackLayout Margin="40,20,40,10">
+                <Label Text="Novo Item" Style="{StaticResource Titulos}"/>
+
+                <Frame
+                Margin="0,0,0,20"
+                Padding = "0"
+                CornerRadius = "25"
+                IsClippedToBounds = "true" 
+                BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+
+                    <Entry x:Name="Produto"               
+                        Style="{StaticResource Entrada_de_texto}"
+                        Placeholder="Produto" Keyboard="Default"/>
+                </Frame>
+                <Frame
+                Margin="0,0,0,20"
+                Padding = "0"
+                CornerRadius = "25"
+                IsClippedToBounds = "true" 
+                BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Quantidade"               
+                           Style="{StaticResource Entrada_de_texto}"
+                           Placeholder="Quatidade" Keyboard="Numeric"
+                           Grid.Column="0"/>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Text="-"
+                            Grid.Column="0"
+                            Style="{StaticResource Botao}"
+                            Margin="0"
+                            Clicked="DiminuiQuantidade"/>
+                            <Button Text="+"
+                            Grid.Column="1"
+                            Style="{StaticResource Botao}"
+                            Margin="0"
+                            Clicked="AumentaQuantidade"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Frame
+                Margin="0,0,0,20"
+                Padding = "0"
+                CornerRadius = "25"
+                IsClippedToBounds = "true" 
+                BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+
+                    <Entry x:Name="Codigo"               
+                        Style="{StaticResource Entrada_de_texto}"
+                        Placeholder="Código" Keyboard="Default"/>
+                </Frame>
+                <Frame
+                    Margin="0,0,0,20"
+                    Padding = "0"
+                    CornerRadius = "25"
+                    IsClippedToBounds = "true" 
+                    BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Entry x:Name="Preco"               
+                               Style="{StaticResource Entrada_de_texto}"
+                               Placeholder="Preço" Keyboard="Numeric"
+                               Grid.Column="0"/>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Text="-"
+                                Grid.Column="0"
+                                Style="{StaticResource Botao}"
+                                Margin="0"
+                                Clicked="DiminuiPreco"/>
+                            <Button Text="+"
+                                Grid.Column="1"
+                                Style="{StaticResource Botao}"
+                                Margin="0"
+                                Clicked="AumentandoPreco"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+
+                <Frame BackgroundColor="{AppThemeBinding Light={StaticResource Secundaria}, Dark={StaticResource BotoesDark}}" 
+                    CornerRadius = "40">
+                    <StackLayout>
+                        <RadioButton Content="Folha de estampa" Style="{StaticResource RadioButtom}" CheckedChanged="Categoria"/>
+                        <RadioButton Content="Camisa" Style="{StaticResource RadioButtom}" CheckedChanged="Categoria"/>
+                        <RadioButton Content="Tecido" Style="{StaticResource RadioButtom}" CheckedChanged="Categoria"/>
+                        <RadioButton Content="Mascara" Style="{StaticResource RadioButtom}" CheckedChanged="Categoria"/>
+                        <RadioButton Content="Casaco Moletom" Style="{StaticResource RadioButtom}" CheckedChanged="Categoria"/>
+                    </StackLayout>
+                </Frame>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Enviar"
+                        Style="{StaticResource Botao}"
+                            Clicked="Button_Clicked"
+                            Grid.Column="1"/>
+                    <Button Text="Voltar"
+                            Style="{StaticResource Botao}"
+                            Clicked="Button_Clicked_1"
+                            Grid.Column="0"/>
+                </Grid>
+                
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

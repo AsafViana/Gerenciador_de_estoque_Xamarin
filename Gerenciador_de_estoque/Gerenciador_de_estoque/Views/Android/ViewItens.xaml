@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.Android.ViewItens">
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+           
+            <ListView IsPullToRefreshEnabled="True" 
+                      x:Name="Lista" 
+                      SeparatorVisibility="None" 
+                      SeparatorColor="{DynamicResource TerciariaDark}" 
+                      HasUnevenRows="True"
+                      Refreshing="Lista_Refreshing"
+                      SelectionMode="None"
+                      ItemTapped="Lista_ItemTapped">
+
+                <ListView.Header>
+                     <Button x:Name="text"
+                             Style="{StaticResource BotaoQueFicaraoEmCimaDaTela}"
+                             VerticalOptions="Start"
+                             Background="#0000"
+                             Margin="0,0,0,20"
+                             TextColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"/>
+                </ListView.Header>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="0,20,0,0">
+                                <Label Text="{Binding Definicao}"
+                                           Style="{DynamicResource Titulos}"
+                                           FontSize="20"/>
+                                <Label Text="{Binding Dado}"
+                                           Style="{DynamicResource Textos}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

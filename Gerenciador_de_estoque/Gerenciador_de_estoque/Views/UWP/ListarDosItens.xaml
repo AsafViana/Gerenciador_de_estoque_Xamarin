@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.UWP.ListarDosItens"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource PrimariaDark}}"
+             Title="Lista">
+
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Atualizar" 
+                     Clicked="Atualizar"/>
+        
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <RefreshView>
+                
+                <ListView x:Name="Lis" 
+                          SeparatorVisibility="Default" 
+                          SeparatorColor="{DynamicResource TerciariaDark}" 
+                          HasUnevenRows="True"
+                          SelectionMode="None">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <SwipeView>
+                                    <SwipeView.LeftItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Deletar"/>
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>
+                                    
+                                    <StackLayout Padding="10">
+
+                                        <Label Text="{Binding Nome}"
+                                           Style="{DynamicResource Titulos}"
+                                           FontSize="20"/>
+                                        <Label Text="{Binding Quantidade}"
+                                           Style="{DynamicResource Textos}"/>
+                                    </StackLayout>
+                                </SwipeView>
+                                <!--<TextCell Text="{Binding Name}"
+                                          Detail="{Binding Motor}"/>-->
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </RefreshView>
+            <Button Text="+"
+                        Style="{DynamicResource BotaoQueFicaraoEmCimaDaTela}"
+                        FontSize="40"
+                        Margin="10,0,10,20"
+                        Clicked="AdicionarItem"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
