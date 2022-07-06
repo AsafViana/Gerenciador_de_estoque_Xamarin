@@ -1,0 +1,5 @@
+.pdb filter=lfs diff=lfs merge=lfs -text
+.mdilpdb filter=lfs diff=lfs merge=lfs -text
+Gerenciador_de_estoque.UWP.mdilpdb filter=lfs diff=lfs merge=lfs -text
+Gerenciador_de_estoque.UWP.pdb filter=lfs diff=lfs merge=lfs -text
+Gerenciador_de_estoque/Gerenciador_de_estoque.Android/obj/Debug/120/android/bin/classes/mono/androidx/core/view/accessibility/AccessibilityManagerCompat_AccessibilityStateChangeListenerImplementor.class filter=lfs diff=lfs merge=lfs -text

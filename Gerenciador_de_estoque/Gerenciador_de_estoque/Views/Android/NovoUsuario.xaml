@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:vm="clr-namespace:Gerenciador_de_estoque.ViewModel"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.Android.NovoUsuario"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource PrimariaDark}}">
+
+    <!--<ContentPage.BindingContext>
+        <vm:LogarController/>
+    </ContentPage.BindingContext>-->
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="40" >
+                <Label Text="Novo Usuário"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Style="{StaticResource Titulos}"/>
+
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Grid>
+                        <Frame
+                    Margin="0,0,0,30"
+                   Padding = "0"
+                   CornerRadius = "25"
+                   IsClippedToBounds = "true" 
+                            BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+                            <Entry x:Name="NomeEmpresa"               
+                                   Style="{StaticResource Entrada_de_texto}"
+                                   Placeholder="Empresa"
+                                   Text="{Binding Username}"/>
+                        </Frame>
+                    </Grid>
+                    <Grid>
+                        <Frame
+                    Margin="0,0,0,30"
+                   Padding = "0"
+                            CornerRadius = "25"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"
+                   IsClippedToBounds = "true" >
+                            <Editor x:Name="Email"               
+                            Style="{StaticResource Entrada_de_texto}"
+                            Placeholder="Email" Keyboard="Email" Text="{Binding Email}"/>
+                        </Frame>
+                    </Grid>
+                    <Grid>
+                        <Frame
+                    Margin="0,0,0,30"
+                   Padding = "0"
+                   CornerRadius = "25"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"
+                   IsClippedToBounds = "true" >
+                            <Entry x:Name="Senha"               
+                                   Style="{StaticResource Entrada_de_texto}"
+                                   Placeholder="Senha"
+                                   IsPassword="true"/>
+                        </Frame>
+                    </Grid>
+                    <Grid>
+                        <Frame
+                    Margin="0,0,0,30"
+                   Padding = "0"
+                   CornerRadius = "25"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"
+                   IsClippedToBounds = "true" >
+                            <Entry x:Name="ConfirmacaoSenha"               
+                                   Style="{StaticResource Entrada_de_texto}"
+                                   Placeholder="Confirme a Senha"
+                                   IsPassword="True"
+                                   Text="{Binding Password}"/>
+                        </Frame>
+                    </Grid>
+                    
+                    <Label x:Name="Status"
+                           TextColor="Red"/>
+
+                    <Button Text="Cadastrar" 
+                    Style="{StaticResource Botao}"
+                    HorizontalOptions="Center"
+                    Command="{Binding RegisterCommand}"
+                    Margin="0,0,0,40"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

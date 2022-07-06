@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.UWP.ListaDetalhe"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource PrimariaDark}}">
+    <ContentPage.Content>
+        <Grid Margin="20,35,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="1">
+                <Frame CornerRadius="50" BackgroundColor="{AppThemeBinding Light={StaticResource PrimariaDark}, Dark={StaticResource Primaria}}">
+                    <StackLayout>
+                        
+                        <Image x:Name="Imagem"
+                               Source="Icon_PC.png"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest="300" 
+                               Margin="0,150,0,0"
+                               Opacity="0.5"/>
+
+                        <ListView IsPullToRefreshEnabled="True" 
+                        x:Name="Detalhes" 
+                        SeparatorVisibility="None" 
+                        SeparatorColor="{DynamicResource TerciariaDark}" 
+                        HasUnevenRows="True"
+                        SelectionMode="None"
+                        ItemTapped="AtualizarInformacao">
+
+                        <ListView.Header>
+                            <Button x:Name="Nome"
+                                Style="{StaticResource BotaoQueFicaraoEmCimaDaTela}"
+                                FontSize="50"
+                                FontAttributes="Bold"
+                                VerticalOptions="Start"
+                                Background="#0000"
+                                Margin="0,0,0,20"
+                                TextColor="{AppThemeBinding Light={StaticResource TerciariaDark}, Dark={StaticResource Terciaria}}"
+                                Clicked="AtualizarNome"/>
+                        </ListView.Header>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Margin="0,40,0,0">
+                                        <Label Text="{Binding Definicao}"
+                                                Style="{DynamicResource Titulos}"
+                                               TextColor="{AppThemeBinding Light={StaticResource TerciariaDark}, Dark={StaticResource Terciaria}}"
+                                                FontSize="30"
+                                               HorizontalOptions="Center"/>
+                                        <Label Text="{Binding Dado}"
+                                                Style="{DynamicResource Textos}"
+                                               TextColor="{AppThemeBinding Light={StaticResource SecundariaDark}, Dark={StaticResource Terciaria}}"
+                                               FontSize="20"
+                                               HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    </StackLayout>
+                    
+                </Frame>
+                </StackLayout>
+
+            <StackLayout Grid.Column="0">
+
+                <ListView x:Name="Lista1" 
+                          SeparatorVisibility="Default" 
+                          SeparatorColor="{DynamicResource TerciariaDark}" 
+                          HasUnevenRows="True"
+                          SelectionMode="None"
+                          ItemTapped="ViewDetalhes">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Deletar"
+                                              Clicked="Deletar"
+                                              CommandParameter="{Binding .}"/>
+                                </ViewCell.ContextActions>
+
+                                <StackLayout Padding="10">
+
+                                    <Label Text="{Binding Nome}"
+                                           Style="{DynamicResource Titulos}"
+                                           FontSize="20"/>
+                                    <Label Text="{Binding Quantidade}"
+                                           Style="{DynamicResource Textos}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="+"
+                        Style="{DynamicResource BotaoQueFicaraoEmCimaDaTela}"
+                        FontSize="40"
+                        Margin="10,0,10,20"
+                        Clicked="AdicionarItem"/>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

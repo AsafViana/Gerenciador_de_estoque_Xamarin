@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.Views.Android.LogarAndroid"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource PrimariaDark}}">
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="40">
+                <Label Style="{StaticResource Titulos}"
+                   x:Name="titulo"
+                   Text="Login Android"
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,40"/>
+                <Grid>
+                    <Frame
+                    Margin="0,0,0,30"
+                   Padding = "0"
+                   CornerRadius = "25"
+                   IsClippedToBounds = "true" 
+                        BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+                        <Entry x:Name="Empresa"               
+                               Style="{StaticResource Entrada_de_texto}"
+                               Placeholder="Empresa"/> 
+                    </Frame>
+                </Grid>
+                <Grid>
+                    <Frame
+                   Padding = "0"
+                   CornerRadius = "25"
+                   IsClippedToBounds = "true" 
+                        BackgroundColor="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}">
+                        <Entry x:Name="Senha"               
+                               Style="{StaticResource Entrada_de_texto}"
+                               Placeholder="Senha"
+                               IsPassword="True"/>
+                    </Frame>
+                </Grid>
+
+                <Button Text="Enviar" 
+                    Style="{StaticResource Botao}"
+                    HorizontalOptions="Center"/>
+
+                <Grid Margin="0,90,0,40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Não é cadastrado?"
+                       Grid.Column="0"
+                       VerticalOptions="End"
+                       x:Name="Testes"
+                       TextColor="{AppThemeBinding Dark={StaticResource SecundariaDark}, Light={StaticResource Primaria}}"/>
+                    <Button Text="Cadastrar"
+                        Grid.Column="1"
+                        Style="{StaticResource Botao}"
+                        HorizontalOptions="End"
+                        Clicked="NovoUsuario"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

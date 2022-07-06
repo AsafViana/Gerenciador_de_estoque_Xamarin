@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gerenciador_de_estoque.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- Cores -->
+            <Color x:Key="Primaria">#f2f2f2</Color>
+            <Color x:Key="Secundaria">#03588c</Color>
+            <Color x:Key="Terciaria">#48a1d9</Color>
+
+            <Color x:Key="PrimariaDark">#2C3E40</Color>
+            <Color x:Key="SecundariaDark">#f2f2f2</Color>
+            <Color x:Key="TerciariaDark">#48a1d9</Color>
+            <Color x:Key="BotoesDark">#03588c</Color>
+
+
+            <!-- Itens -->
+            <Style x:Key="Entrada_de_texto" TargetType="Editor">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"/>
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource SecundariaDark}}"/>
+                <Setter Property="HeightRequest"
+                    Value="50"/>
+                <Setter Property="FontSize"
+                    Value="20"/>
+                <Setter Property="Margin"
+                        Value="20,0"/>
+            </Style>
+
+            <Style x:Key="Botao" TargetType="Button">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource Secundaria}, Dark={StaticResource BotoesDark}}"/>
+                <Setter Property="CornerRadius"
+                    Value="25"/>
+                <Setter Property="HeightRequest"
+                    Value="50"/>
+                <Setter Property="FontSize"
+                    Value="Medium"/>
+                <Setter Property="WidthRequest"
+                    Value="200"/>
+                <Setter Property="Margin"
+                    Value="0, 40, 0, 0"/>
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource SecundariaDark}}"/>
+            </Style>
+
+            <Style x:Key="BotaoQueFicaraoEmCimaDaTela" TargetType="Button">
+                <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource Secundaria}, Dark={StaticResource BotoesDark}}"/>
+                <Setter Property="CornerRadius"
+                    Value="40"/>
+                <Setter Property="FontSize"
+                    Value="40"/>
+                <Setter Property="Margin"
+                    Value="0, 40, 0, 0"/>
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource Primaria}, Dark={StaticResource SecundariaDark}}"/>
+            </Style>
+
+            <Style x:Key="Titulos" TargetType="Label">
+                <Setter Property="FontSize"
+                    Value="50"/>
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource TerciariaDark}}"/>
+                <Setter Property="FontAttributes"
+                    Value="Bold"/>
+            </Style>
+            
+            <Style x:Key="Textos" TargetType="Label">
+                <Setter Property="FontSize"
+                    Value="50"/>
+                <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource Terciaria}, Dark={StaticResource SecundariaDark}}"/>
+                <Setter Property="FontSize"
+                    Value="15"/>
+            </Style>
+
+            <Style x:Key="RadioButtom" TargetType="RadioButton">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secundaria}, Dark={StaticResource BotoesDark}}"/>
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

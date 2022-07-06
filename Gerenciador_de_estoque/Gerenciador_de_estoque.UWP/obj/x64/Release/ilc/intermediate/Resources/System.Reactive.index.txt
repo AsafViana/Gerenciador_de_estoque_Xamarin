@@ -1,0 +1,6 @@
+System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263
+  System.Reactive.Strings_Core.resources
+  System.Reactive.Strings_Linq.resources
+  System.Reactive.Strings_PlatformServices.resources
+  System.Reactive.Strings_Providers.resources
+  System.Reactive.Platforms.Windows.Strings_WindowsThreading.resources
