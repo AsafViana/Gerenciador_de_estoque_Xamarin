@@ -86,21 +86,22 @@ namespace Gerenciador_de_estoque.Views.Android
             {
                 string d = await DisplayPromptAsync("Atualizar", definicao, initialValue: dado, keyboard:Keyboard.Numeric);
 
-                switch (definicao)
+                if(d != null)
                 {
-                    case "Quantidade:":
-                        Item.Quantidade = Convert.ToInt32(d);
-                        break;
-                    case "Código:":
-                        Item.Codigo = Convert.ToInt32(d);
-                        break;
-                    case "Preço:":
-                        Item.Preco = Convert.ToDouble(d);
-                        break;
+                    switch (definicao)
+                        {
+                            case "Quantidade:":
+                                Item.Quantidade = Convert.ToInt32(d);
+                                break;
+                            case "Código:":
+                                Item.Codigo = Convert.ToInt32(d);
+                                break;
+                            case "Preço:":
+                                Item.Preco = Convert.ToDouble(d);
+                                break;
+                        }
                 }
             }
-
-            
 
             var _ = itemService.UpdateItem(Item);
 

@@ -45,9 +45,7 @@ app_environment_variables:
 	.long	.L.autostr.8
 	.long	.L.autostr.9
 	.long	.L.autostr.10
-	.long	.L.autostr.11
-	.long	.L.autostr.12
-	.size	app_environment_variables, 48
+	.size	app_environment_variables, 40
 
 	.section	.data, "aw", %progbits
 	.type	app_system_properties, %object
@@ -330,342 +328,7 @@ assembly_store_bundled_assemblies:
 	.long	0x0	@ config_data
 	.long	0x0	@ descriptor
 
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.long	0x0	@ image_data
-	.long	0x0	@ debug_info_data
-	.long	0x0	@ config_data
-	.long	0x0	@ descriptor
-
-	.size	assembly_store_bundled_assemblies, 1904
+	.size	assembly_store_bundled_assemblies, 832
 	@ Assembly store data
 
 	.type	assembly_stores, %object
@@ -694,7 +357,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.13	@ name: libmonodroid.so
+	.long	.L.autostr.11	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -702,7 +365,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.14	@ name: libxa-internal-api.so
+	.long	.L.autostr.12	@ name: libxa-internal-api.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -710,7 +373,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.15	@ name: libmonodroid.so
+	.long	.L.autostr.13	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -718,7 +381,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.16	@ name: libxa-internal-api.so
+	.long	.L.autostr.14	@ name: libxa-internal-api.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -726,7 +389,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.17	@ name: libmono-btls-shared.so
+	.long	.L.autostr.15	@ name: libmono-btls-shared.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -734,7 +397,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.18	@ name: libmono-native.so
+	.long	.L.autostr.16	@ name: libmono-native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -742,7 +405,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.19	@ name: libe_sqlite3.so
+	.long	.L.autostr.17	@ name: libe_sqlite3.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -750,7 +413,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.20	@ name: libmono-native.so
+	.long	.L.autostr.18	@ name: libmono-native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -758,7 +421,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.21	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.19	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -766,7 +429,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.22	@ name: libmono-native.so
+	.long	.L.autostr.20	@ name: libmono-native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -774,7 +437,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.23	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.21	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -782,7 +445,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.24	@ name: libxa-internal-api.so
+	.long	.L.autostr.22	@ name: libxa-internal-api.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -790,7 +453,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.25	@ name: libe_sqlite3.so
+	.long	.L.autostr.23	@ name: libe_sqlite3.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -798,7 +461,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.26	@ name: libmono-native.so
+	.long	.L.autostr.24	@ name: libmono-native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -806,7 +469,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.27	@ name: libmono-btls-shared.so
+	.long	.L.autostr.25	@ name: libmono-btls-shared.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -814,7 +477,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.28	@ name: libmonodroid.so
+	.long	.L.autostr.26	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -822,7 +485,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.29	@ name: libxa-internal-api.so
+	.long	.L.autostr.27	@ name: libxa-internal-api.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -830,7 +493,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.30	@ name: libmonodroid.so
+	.long	.L.autostr.28	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -838,7 +501,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.31	@ name: libe_sqlite3.so
+	.long	.L.autostr.29	@ name: libe_sqlite3.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -846,7 +509,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.32	@ name: libmono-btls-shared.so
+	.long	.L.autostr.30	@ name: libmono-btls-shared.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -854,7 +517,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.33	@ name: libe_sqlite3.so
+	.long	.L.autostr.31	@ name: libe_sqlite3.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -862,7 +525,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.34	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.32	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -870,7 +533,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.35	@ name: libmono-btls-shared.so
+	.long	.L.autostr.33	@ name: libmono-btls-shared.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -878,7 +541,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.36	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.34	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -905,14 +568,14 @@ application_config:
 	.byte	0x1	@ bound_stream_io_exception_type
 	.zero	2
 	.long	0x3	@ package_naming_policy
-	.long	0xc	@ environment_variable_count
+	.long	0xa	@ environment_variable_count
 	.long	0x0	@ system_property_count
-	.long	0x77	@ number_of_assemblies_in_apk
+	.long	0x34	@ number_of_assemblies_in_apk
 	.long	0x0	@ bundled_assembly_name_width
 	.long	0x2	@ number_of_assembly_store_files
 	.long	0x18	@ number_of_dso_cache_entries
 	.long	0x0	@ mono_components_mask
-	.long	.L.autostr.37	@ android_package_name
+	.long	.L.autostr.35	@ android_package_name
 	.size	application_config, 48
 
 
@@ -924,63 +587,63 @@ application_config:
 
 	.type	.L.autostr.1, %object
 .L.autostr.1:
-	.asciz	"MONO_DEBUG"
-	.size	.L.autostr.1, 11
+	.asciz	"MONO_GC_PARAMS"
+	.size	.L.autostr.1, 15
 
 	.type	.L.autostr.2, %object
 .L.autostr.2:
-	.asciz	"gen-compact-seq-points"
-	.size	.L.autostr.2, 23
+	.asciz	"major=marksweep-conc"
+	.size	.L.autostr.2, 21
 
 	.type	.L.autostr.3, %object
 .L.autostr.3:
-	.asciz	"MONO_GC_PARAMS"
-	.size	.L.autostr.3, 15
+	.asciz	"XAMARIN_BUILD_ID"
+	.size	.L.autostr.3, 17
 
 	.type	.L.autostr.4, %object
 .L.autostr.4:
-	.asciz	"major=marksweep-conc"
-	.size	.L.autostr.4, 21
+	.asciz	"0c47c1f2-a0d4-41a5-9b06-297f33a8404e"
+	.size	.L.autostr.4, 37
 
 	.type	.L.autostr.5, %object
 .L.autostr.5:
-	.asciz	"XAMARIN_BUILD_ID"
-	.size	.L.autostr.5, 17
+	.asciz	"XA_HTTP_CLIENT_HANDLER_TYPE"
+	.size	.L.autostr.5, 28
 
 	.type	.L.autostr.6, %object
 .L.autostr.6:
-	.asciz	"a87a3c86-572a-421c-970e-25f68cb74482"
-	.size	.L.autostr.6, 37
+	.asciz	"Xamarin.Android.Net.AndroidClientHandler"
+	.size	.L.autostr.6, 41
 
 	.type	.L.autostr.7, %object
 .L.autostr.7:
-	.asciz	"XA_HTTP_CLIENT_HANDLER_TYPE"
-	.size	.L.autostr.7, 28
+	.asciz	"XA_TLS_PROVIDER"
+	.size	.L.autostr.7, 16
 
 	.type	.L.autostr.8, %object
 .L.autostr.8:
-	.asciz	"Xamarin.Android.Net.AndroidClientHandler"
-	.size	.L.autostr.8, 41
+	.asciz	"btls"
+	.size	.L.autostr.8, 5
 
 	.type	.L.autostr.9, %object
 .L.autostr.9:
-	.asciz	"XA_TLS_PROVIDER"
-	.size	.L.autostr.9, 16
+	.asciz	"__XA_PACKAGE_NAMING_POLICY__"
+	.size	.L.autostr.9, 29
 
 	.type	.L.autostr.10, %object
 .L.autostr.10:
-	.asciz	"btls"
-	.size	.L.autostr.10, 5
+	.asciz	"LowercaseCrc64"
+	.size	.L.autostr.10, 15
 
 	.type	.L.autostr.11, %object
 .L.autostr.11:
-	.asciz	"__XA_PACKAGE_NAMING_POLICY__"
-	.size	.L.autostr.11, 29
+	.asciz	"libmonodroid.so"
+	.size	.L.autostr.11, 16
 
 	.type	.L.autostr.12, %object
 .L.autostr.12:
-	.asciz	"LowercaseCrc64"
-	.size	.L.autostr.12, 15
+	.asciz	"libxa-internal-api.so"
+	.size	.L.autostr.12, 22
 
 	.type	.L.autostr.13, %object
 .L.autostr.13:
@@ -994,18 +657,18 @@ application_config:
 
 	.type	.L.autostr.15, %object
 .L.autostr.15:
-	.asciz	"libmonodroid.so"
-	.size	.L.autostr.15, 16
+	.asciz	"libmono-btls-shared.so"
+	.size	.L.autostr.15, 23
 
 	.type	.L.autostr.16, %object
 .L.autostr.16:
-	.asciz	"libxa-internal-api.so"
-	.size	.L.autostr.16, 22
+	.asciz	"libmono-native.so"
+	.size	.L.autostr.16, 18
 
 	.type	.L.autostr.17, %object
 .L.autostr.17:
-	.asciz	"libmono-btls-shared.so"
-	.size	.L.autostr.17, 23
+	.asciz	"libe_sqlite3.so"
+	.size	.L.autostr.17, 16
 
 	.type	.L.autostr.18, %object
 .L.autostr.18:
@@ -1014,8 +677,8 @@ application_config:
 
 	.type	.L.autostr.19, %object
 .L.autostr.19:
-	.asciz	"libe_sqlite3.so"
-	.size	.L.autostr.19, 16
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.19, 19
 
 	.type	.L.autostr.20, %object
 .L.autostr.20:
@@ -1029,33 +692,33 @@ application_config:
 
 	.type	.L.autostr.22, %object
 .L.autostr.22:
-	.asciz	"libmono-native.so"
-	.size	.L.autostr.22, 18
+	.asciz	"libxa-internal-api.so"
+	.size	.L.autostr.22, 22
 
 	.type	.L.autostr.23, %object
 .L.autostr.23:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.23, 19
+	.asciz	"libe_sqlite3.so"
+	.size	.L.autostr.23, 16
 
 	.type	.L.autostr.24, %object
 .L.autostr.24:
-	.asciz	"libxa-internal-api.so"
-	.size	.L.autostr.24, 22
+	.asciz	"libmono-native.so"
+	.size	.L.autostr.24, 18
 
 	.type	.L.autostr.25, %object
 .L.autostr.25:
-	.asciz	"libe_sqlite3.so"
-	.size	.L.autostr.25, 16
+	.asciz	"libmono-btls-shared.so"
+	.size	.L.autostr.25, 23
 
 	.type	.L.autostr.26, %object
 .L.autostr.26:
-	.asciz	"libmono-native.so"
-	.size	.L.autostr.26, 18
+	.asciz	"libmonodroid.so"
+	.size	.L.autostr.26, 16
 
 	.type	.L.autostr.27, %object
 .L.autostr.27:
-	.asciz	"libmono-btls-shared.so"
-	.size	.L.autostr.27, 23
+	.asciz	"libxa-internal-api.so"
+	.size	.L.autostr.27, 22
 
 	.type	.L.autostr.28, %object
 .L.autostr.28:
@@ -1064,13 +727,13 @@ application_config:
 
 	.type	.L.autostr.29, %object
 .L.autostr.29:
-	.asciz	"libxa-internal-api.so"
-	.size	.L.autostr.29, 22
+	.asciz	"libe_sqlite3.so"
+	.size	.L.autostr.29, 16
 
 	.type	.L.autostr.30, %object
 .L.autostr.30:
-	.asciz	"libmonodroid.so"
-	.size	.L.autostr.30, 16
+	.asciz	"libmono-btls-shared.so"
+	.size	.L.autostr.30, 23
 
 	.type	.L.autostr.31, %object
 .L.autostr.31:
@@ -1079,13 +742,13 @@ application_config:
 
 	.type	.L.autostr.32, %object
 .L.autostr.32:
-	.asciz	"libmono-btls-shared.so"
-	.size	.L.autostr.32, 23
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.32, 19
 
 	.type	.L.autostr.33, %object
 .L.autostr.33:
-	.asciz	"libe_sqlite3.so"
-	.size	.L.autostr.33, 16
+	.asciz	"libmono-btls-shared.so"
+	.size	.L.autostr.33, 23
 
 	.type	.L.autostr.34, %object
 .L.autostr.34:
@@ -1094,18 +757,8 @@ application_config:
 
 	.type	.L.autostr.35, %object
 .L.autostr.35:
-	.asciz	"libmono-btls-shared.so"
-	.size	.L.autostr.35, 23
-
-	.type	.L.autostr.36, %object
-.L.autostr.36:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.36, 19
-
-	.type	.L.autostr.37, %object
-.L.autostr.37:
-	.asciz	"com.companyname.gerenciador_de_estoque"
-	.size	.L.autostr.37, 39
+	.asciz	"com.zaf_tech.gerenciador_de_estoque"
+	.size	.L.autostr.35, 36
 
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ bbba5a21f3b649a761b22d83959758b4d30df672"
