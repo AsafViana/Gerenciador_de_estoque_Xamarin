@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-03T16:50:16.105</Modified>
+      <Modified>2022-07-06T01:07:51.952</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Gerenciador_de_estoque.UWP.exe">
       <PackagePath>entrypoint\Gerenciador_de_estoque.UWP.exe</PackagePath>
-      <Modified>2022-07-03T16:50:15.066</Modified>
+      <Modified>2022-07-06T01:07:51.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\firebasedatabase.net\4.0.7\lib\netstandard2.0\Firebase.dll">
       <PackagePath>Firebase.dll</PackagePath>
@@ -58,6 +58,26 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2022-06-10T22:23:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2021-09-02T21:04:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-09-03T17:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2020-09-03T17:13:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win10-x64\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-08-17T14:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.4\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2020-09-03T17:13:06.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
       <Modified>2018-05-25T16:44:28.000</Modified>
@@ -65,10 +85,6 @@
     <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2020-02-19T10:05:16.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\unirest-apimatic\1.0.1.27\lib\uap10.0\unirest-net.dll">
-      <PackagePath>unirest-net.dll</PackagePath>
-      <Modified>2017-03-30T16:37:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -116,7 +132,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque\bin\Debug\netstandard2.0\Gerenciador_de_estoque.dll">
       <PackagePath>Gerenciador_de_estoque.dll</PackagePath>
-      <Modified>2022-07-03T16:51:29.226</Modified>
+      <Modified>2022-07-06T01:08:47.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -394,11 +410,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-07-03T16:50:14.997</Modified>
+      <Modified>2022-07-06T01:07:51.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-07-03T16:50:14.998</Modified>
+      <Modified>2022-07-06T01:07:51.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -414,11 +430,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-07-03T16:36:30.068</Modified>
+      <Modified>2022-07-06T00:51:55.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Core\Gerenciador_de_estoque.UWP.exe">
       <PackagePath>Gerenciador_de_estoque.UWP.exe</PackagePath>
-      <Modified>2022-07-03T16:50:16.101</Modified>
+      <Modified>2022-07-06T01:07:51.948</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

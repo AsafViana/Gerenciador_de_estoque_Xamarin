@@ -18,6 +18,15 @@ namespace Gerenciador_de_estoque.Views.UWP
     public partial class ListaDetalhe : ContentPage
     {
         #region Instancias
+        string[] categoria = new string[]
+        {
+            "Casaco Moletom",
+            "Mascara",
+            "Tecido",
+            "Camisa",
+            "Folha de estampa"
+        };
+
         private ListaDosItensController Controller;
 
         private Itens Item;
@@ -87,7 +96,7 @@ namespace Gerenciador_de_estoque.Views.UWP
             Imagem.WidthRequest = 0;
             Imagem.Margin = new Thickness(0, 0, 0, 0);
 
-            Item = e.Item as Itens;
+            Item = (Itens)e.Item;
 
             Nome.Text = Item.Nome;
             Detalhes.ItemsSource = RecebeDados();
@@ -123,7 +132,7 @@ namespace Gerenciador_de_estoque.Views.UWP
 
         private async void AtualizarInformacao(object sender, ItemTappedEventArgs e)
         {
-            Controller.AtualizarInformacao((Dados)e.Item);
+            Controller.AtualizarInformacao((Dados)e.Item, Item, categoria);
 
             Detalhes.ItemsSource = RecebeDados();
         }

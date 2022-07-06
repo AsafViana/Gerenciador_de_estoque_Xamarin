@@ -15,7 +15,6 @@ C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_esto
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Newtonsoft.Json.dll
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\System.Runtime.dll
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\System.Reactive.dll
-C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\unirest-net.dll
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Microsoft.Graphics.Canvas.winmd
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Xamarin.Essentials.dll
@@ -81,3 +80,8 @@ C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_esto
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424923200000000.json
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\Xamarin.CommunityToolkit.dll
+C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\SQLite-net.dll
+C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\SQLitePCLRaw.core.dll
+C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\e_sqlite3.dll
+C:\Users\asaff\source\Android xamarin\Gerenciador_de_estoque\Gerenciador_de_estoque\Gerenciador_de_estoque.UWP\bin\x64\Debug\SQLitePCLRaw.provider.e_sqlite3.dll

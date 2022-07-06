@@ -66,7 +66,7 @@ namespace Gerenciador_de_estoque.Views.Android
             var _ = e.Item;
             AtualizarInformacao((Dados)e.Item);
         }
-        //
+
         public async void AtualizarInformacao(Dados ItemDado)
         {
             Dados AtualDado = ItemDado;

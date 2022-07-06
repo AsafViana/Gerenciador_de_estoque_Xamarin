@@ -12,6 +12,8 @@ namespace Gerenciador_de_estoque.ViewModel
     public class ListaDosItensController
     {
         #region Instancias
+
+         
         private Itens Item { get; set; }
 
         public FirebaseClient client = new FirebaseClient("https://gerenciamento-de-estoque-9f83d-default-rtdb.firebaseio.com/");
@@ -75,16 +77,26 @@ namespace Gerenciador_de_estoque.ViewModel
             };
         }
 
-        public async void AtualizarInformacao(Dados ItemDado)
+        public async void AtualizarInformacao(Dados ItemDado, Itens Item, string[] categoria)
         {
+
             Dados AtualDado = ItemDado;
             string definicao = AtualDado.Definicao + ":";
             string dado = AtualDado.Dado;
 
-            string d = await Application.Current.MainPage.DisplayPromptAsync("Atualizar", definicao, initialValue: dado);
-
-            if (d != null)
+            if (definicao == "Categoria:")
             {
+                string d = await Application.Current.MainPage.DisplayActionSheet("Atualizar", "Cancelar", null, categoria);
+
+                if (d != "Cancelar")
+                {
+                    Item.Categoria = d;
+                }
+            }
+            else
+            {
+                string d = await Application.Current.MainPage.DisplayPromptAsync("Atualizar", definicao, initialValue: dado, keyboard: Keyboard.Numeric);
+
                 switch (definicao)
                 {
                     case "Quantidade:":
@@ -96,12 +108,10 @@ namespace Gerenciador_de_estoque.ViewModel
                     case "Preço:":
                         Item.Preco = Convert.ToDouble(d);
                         break;
-                    case "Categoria:":
-                        Item.Categoria = d;
-                        break;
                 }
+            }
 
-                var _ = itemService.UpdateItem(Item);
+            var _ = itemService.UpdateItem(Item);
             }
             
         }
@@ -111,6 +121,3 @@ namespace Gerenciador_de_estoque.ViewModel
         public string Definicao { get; set; }
         public string Dado { get; set; }
     }
-}
-
-
